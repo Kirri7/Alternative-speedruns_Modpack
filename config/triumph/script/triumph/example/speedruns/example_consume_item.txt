@@ -1,0 +1,21 @@
+
+//Set the icon item
+setIcon(<minecraft:melon>)
+
+//Set the title String
+setTitle("Consume an item")
+
+//Set the description String
+setDescription("+1")
+
+//Add a parent advancement. The syntax is "modid:folder/path/to/the/advancement/then/filename"
+addParent("triumph:example/speedruns/root")
+
+//Set the position
+setPos(25,90)
+
+//Hide the connection lines, so I can have a pretty shape
+hideLines()
+
+//Adds criteria named "consumed" with the trigger type "minecraft:consume_item". This function returns the criteria as an object
+criteria = addCriteria("consumed", "minecraft:consume_item")

@@ -1,0 +1,13 @@
+
+setIcon("minecraft:anvil")
+setTranslatedTitle("Fina a Village")
+setTranslatedDescription("+1")
+
+addParent("triumph:example/speedruns/root")
+
+//Hide the connection lines, so I can have a pretty shape
+hideLines()
+
+criteria = addCriteria("fortress", "minecraft:location")
+criteria.setFeature("Village")
+setPos(50,90)

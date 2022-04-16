@@ -1,0 +1,13 @@
+
+setIcon("minecraft:prismarine")
+setTranslatedTitle("Find a Monument")
+setTranslatedDescription("+1")
+
+addParent("triumph:example/speedruns/root")
+
+//Hide the connection lines, so I can have a pretty shape
+hideLines()
+
+criteria = addCriteria("fortress", "minecraft:location")
+criteria.setFeature("Monument")
+setPos(50,115)

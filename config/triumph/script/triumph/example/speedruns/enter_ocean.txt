@@ -1,0 +1,24 @@
+
+//Set icon item
+setIcon(<minecraft:water_bucket>)
+
+//Set title String
+setTitle("Reach a Deep Ocean")
+
+//Set description String
+setDescription("+1")
+
+//Add a parent advancement. The syntax is "modid:folder/path/to/the/advancement/then/filename"
+addParent("triumph:example/speedruns/root")
+
+//Set the position
+setPos(25,115)
+
+//Hide the connection lines, so I can have a pretty shape
+hideLines()
+
+//Adds criteria named "entered_forest" with the trigger type "minecraft:location". This function returns the criteria as an object
+criteria = addCriteria("entered_forest", "minecraft:location")
+
+//Sets the required biome for the criteria. This is the biome the player must be in.
+criteria.setBiome("minecraft:deep_ocean")

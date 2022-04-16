@@ -1,0 +1,28 @@
+
+//Set icon item
+setIcon(<minecraft:golden_sword>)
+
+//Set title String
+setTitle("All swords")
+
+//Set description String
+setDescription("+1")
+
+//Add a parent advancement. The syntax is "modid:folder/path/to/the/advancement/then/filename"
+addParent("triumph:example/speedruns/root")
+
+//Set the position
+setPos(125,65)
+
+//Hide the connection lines, so I can have a pretty shape
+hideLines()
+
+//Adds criteria named "hasStickOfTruth" with the trigger type "minecraft:inventory_changed". This function returns the criteria as an object
+criteria = addCriteria("hasStickOfTruth", "minecraft:inventory_changed")
+
+//Adds the required item for the criteria. This is the item that needs to be in the player inventory.
+criteria.addItem(<minecraft:wooden_sword>)
+criteria.addItem(<minecraft:stone_sword>)
+criteria.addItem(<minecraft:iron_sword>)
+criteria.addItem(<minecraft:golden_sword>)
+criteria.addItem(<minecraft:diamond_sword>)

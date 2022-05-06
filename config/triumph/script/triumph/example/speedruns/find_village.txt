@@ -1,6 +1,6 @@
 
 setIcon("minecraft:anvil")
-setTranslatedTitle("Fina a Village")
+setTranslatedTitle("Find a Village")
 setTranslatedDescription("+1")
 
 addParent("triumph:example/speedruns/root")

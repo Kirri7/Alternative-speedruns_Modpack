@@ -1,0 +1,11 @@
+say The Only Thing They Fear Is You!
+
+give @p mw:gpca1 1 0 {Ammo:4}
+
+give @p mw:plasmacapsule 64 0
+give @p mw:plasmacapsule 64 0
+
+give @p mw:m45 1 0 {Ammo:6}
+
+give @p mw:shotgun12gauge 64 0
+give @p mw:shotgun12gauge 64 0
